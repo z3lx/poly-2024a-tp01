@@ -23,7 +23,8 @@ Cette section indique certaines modifications et erreurs corrigées dans ce READ
 - Exercice 4: Correction concernant l'arrondissement du résultat.
 - Exercice 1: Fait en sorte que le tableau corresponde aux tests et au GIF.
 - Exercice 2: Basé les tests sur les bons critères des ingrédients. (changements dans `test_tp1.py`)
-
+- Faire en sorte que les tableaux et les gifs du README concordent aux tests. 
+- Exercice 4: La borne inférieure n'est pas incluse et non l'inverse.
 
 ## Mise en contexte:  
 
@@ -134,7 +135,7 @@ Consignes:
   - Entre 10% et 25% de batterie, chaque pourcentage équivaut à 1km
   - Entre 5% et 10% de batterie, chaque pourcentage équivaut à 2.5km
   - Entre 0% et 5% de batterie, chaque pourcentage équivaut à 6km  
-*La borne inférieure n'est pas incluse.
+*La borne inférieure **n'est pas** incluse.
 - L'affichage la distance doit être  ~~arrondi au km près~~ arrondie à un chiffre après la virgule.
 
 
