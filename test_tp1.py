@@ -147,7 +147,7 @@ class TestExercice5(unittest.TestCase):
         medals = "GSBS"
         simulated_inputs = f"{country}\n{medals}"
         output = self.runner.run(simulated_inputs)
-        expected = f"{self.input_questions}{country}:\n- 1 OR\n- 2 Argent\n- 1 Bronze\n"
+        expected = f"{self.input_questions}{country}:\n- 1 Or\n- 2 Argent\n- 1 Bronze\n"
         self.assertEqual(output, expected)
 
 
@@ -156,7 +156,15 @@ class TestExercice5(unittest.TestCase):
         medals = "GSBSSGBSGSSGBSBBBGGSSSS"
         simulated_inputs = f"{country}\n{medals}"
         output = self.runner.run(simulated_inputs)
-        expected = f"{self.input_questions}{country}:\n- 6 OR\n- 11 Argent\n- 6 Bronze\n"
+        expected = f"{self.input_questions}{country}:\n- 6 Or\n- 11 Argent\n- 6 Bronze\n"
+        self.assertEqual(output, expected)
+    
+    def test_wrong_str(self):
+        country = "CAN"
+        medals = "A"
+        simulated_inputs = f"{country}\n{medals}"
+        output = self.runner.run(simulated_inputs)
+        expected = f"{self.input_questions}Ceci est une chaine invalide.\n"
         self.assertEqual(output, expected)
 
 if __name__ == "__main__": 
