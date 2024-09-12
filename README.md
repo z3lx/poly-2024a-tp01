@@ -76,6 +76,8 @@ Consignes:
 - Demander la quantité d'eau à assainir
 - Afficher les quantités totales de chaque matérieau requis
 
+Bien sûr, 1.5 filtre/lampe étant impossible, veuillez les arrondir à la hausse.
+
 Exemple:  
 
 
@@ -83,8 +85,8 @@ Exemple:
 
 | Sorties | Entrées |
 |:-|:-|
-|Quantité d'eau à assainir (en L): | 10 |
-| Voici les matériaux requis pour l'assainissement de 10L d'eau:<br>- 2 filtres<br>- 6 lampes UV<br>- 1kg de chlore||
+|Quantité d'eau à assainir (en L): | 15 |
+| Voici les matériaux requis pour l'assainissement de 15.0L d'eau:<br>- 3 filtres<br>- 9 lampes UV<br>- 1.5kg de chlore||
 
 ## Exercice 3: 
 Afin de prévoir correctement les dimensions possibles de la zone d'atterrissage de l'épreuve du lancer de poids, le comité vous demande de créer un script permettant de calculer la distance maximale en `x` d'une boule lancée par un athlète en fonction de sa vitesse initiale et de l'angle depuis laquelle elle est lancée.

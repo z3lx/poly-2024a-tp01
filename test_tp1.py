@@ -51,16 +51,16 @@ class TestExercice2(unittest.TestCase):
 
     def test_standard_water(self):
         water_quantity = 5.0
-        expected_filter = 1.0
-        expected_light = 3.0
+        expected_filter = 1
+        expected_light = 3
         expected_chlorine = 0.5
         self.format_tests(water_quantity, expected_filter, expected_light, expected_chlorine)
 
     def test_standard_water_float(self):
-        water_quantity = 2.0
-        expected_filter = 0.4
-        expected_light = 1.2
-        expected_chlorine = 0.2
+        water_quantity = 35.0
+        expected_filter = 7
+        expected_light = 21
+        expected_chlorine = 3.5
         self.format_tests(water_quantity, expected_filter, expected_light, expected_chlorine)
 
 class TestExercice3(unittest.TestCase): 
