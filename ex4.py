@@ -1,13 +1,20 @@
-# TODO: Écrire un programme qui demande le pourcentage de charge actuel de la batterie du bateau,
-#        calcule la distance restante en km en fonction de ce pourcentage,
-#        et affiche le résultat au format "XX km".
-#        Assurez une gestion du pourcentage valide au cours de votre programme (% toujours dans [0 ; 100]).
+from utils import try_cast
 
-battery_level = float(input("Pourcentage de batterie ? "))
 
-if battery_level <= 0:
-    print("La batterie est vide")
-else:
+def ex4() -> None:
+    s = input("Pourcentage de batterie ? ")
+    battery_level = try_cast(s, float)
+    if battery_level is None:
+        return
+
+    if battery_level < 0 or battery_level > 100:
+        print("Veuillez entrer un pourcentage entre 0 et 100")
+        return
+
+    if battery_level == 0:
+        print("La batterie est vide")
+        return
+
     battery_multiplier_map = {
         50: 2,
         25: 0.5,
@@ -23,3 +30,6 @@ else:
             battery_level = percentage
 
     print(f"{distance} km")
+
+
+ex4()
